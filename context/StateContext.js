@@ -13,7 +13,6 @@ export const StateContext = ({ children }) => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [filterData, setFilterData] = useState([]);
   //uuid
-  const unique_id = uuid();
   //navigation panel(mobile)
   const [navPanActive, setNavPanActive] = useState(false);
   //*variables////////////////////////

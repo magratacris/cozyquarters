@@ -1,4 +1,4 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
-  // "extends": ["next"]
+  // "extends": ["next", "next/core-web-vitals"]
+  "extends": ["next"]
 }

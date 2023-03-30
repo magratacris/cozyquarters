@@ -1,4 +1,3 @@
-import React from "react";
 import { useStateContext } from "@/context/StateContext";
 //sanity
 import { urlFor } from "@/lib/client";

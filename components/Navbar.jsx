@@ -1,4 +1,3 @@
-import React from "react";
 import { useStateContext } from "@/context/StateContext";
 //components
 import Cart from "./Cart";
@@ -25,7 +24,7 @@ const Navbar = () => {
   const tabletPort = size.width > 976;
 
   return (
-    <div className="relative select-none ">
+    <div className="fixed top-0 z-30 w-full select-none bg-[#f8f8f8] ">
       <nav className="relative mx-auto flex h-14 max-w-[72rem] items-center justify-between  px-4 text-main-color ">
         {!tabletPort ? (
           <span

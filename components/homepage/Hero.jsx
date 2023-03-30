@@ -5,6 +5,7 @@ import { urlFor } from "@/lib/client";
 // next
 import Links from "next/link";
 import Image from "next/image";
+
 //react-scroll
 import { Link } from "react-scroll";
 //react-icons
@@ -21,7 +22,7 @@ const Hero = ({
   const { setActiveFilter } = useStateContext();
 
   return (
-    <section>
+    <section name="hero" className="mt-14">
       <div className="relative">
         <div className="mx-auto h-screen max-w-[72rem]">
           <div className="flex h-[90vh] flex-col gap-5  px-4   md:pt-2 lg:flex-row 3xl:pt-14">

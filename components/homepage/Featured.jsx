@@ -1,4 +1,3 @@
-import React from "react";
 //components
 import Products from "@/components/homepage/Products";
 //react-icons

@@ -25,7 +25,7 @@ const AllProducts = ({ allProducts }) => {
 
   return (
     <>
-      <div className="mx-auto min-h-screen max-w-[72rem] select-none sm:px-2 md:px-4">
+      <div className="mx-auto mt-16 min-h-screen max-w-[72rem] select-none sm:px-2 md:px-4">
         <div className="mt-8 mb-14">
           <nav className="mx-auto max-w-[50rem] ">
             <ul className="flex flex-wrap justify-center gap-4 px-4 sm:gap-2">

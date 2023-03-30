@@ -1,4 +1,3 @@
-import React from "react";
 //sanity
 import { urlFor } from "@/lib/client";
 //next

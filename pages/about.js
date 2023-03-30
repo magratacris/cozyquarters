@@ -1,4 +1,3 @@
-import React from "react";
 //framer-motion
 import { motion } from "framer-motion";
 const About = () => {
@@ -7,7 +6,7 @@ const About = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
-      className="mx-auto flex min-h-[40rem] max-w-[65rem] flex-col p-8"
+      className="mx-auto mt-14 flex min-h-[40rem] max-w-[65rem] flex-col p-8"
     >
       <h1 className="mx-auto whitespace-nowrap py-4 text-2xl">About Us</h1>
       <p className="text-sm">

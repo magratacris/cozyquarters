@@ -1,4 +1,3 @@
-import React from "react";
 //components
 import Products from "./Products";
 //react-marquee

@@ -1,4 +1,3 @@
-import React from "react";
 import { useStateContext } from "@/context/StateContext";
 //next
 import Link from "next/link";

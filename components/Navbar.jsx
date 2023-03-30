@@ -9,7 +9,7 @@ import Link from "next/link";
 import useWindowSize from "@/hooks/useWindowSize";
 //react-icons
 import { BsCart3 } from "react-icons/bs";
-import { GrMenu } from "react-icons/Gr";
+import { GrMenu } from "react-icons/gr";
 import { RiCloseFill } from "react-icons/ri";
 
 const Navbar = () => {

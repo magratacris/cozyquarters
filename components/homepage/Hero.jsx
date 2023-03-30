@@ -24,7 +24,7 @@ const Hero = ({
     <section>
       <div className="relative">
         <div className="mx-auto h-screen max-w-[72rem]">
-          <div className="flex h-[90vh]  flex-col gap-5  px-4   md:pt-2 lg:flex-row  3xl:pt-14">
+          <div className="flex h-[90vh] flex-col gap-5  px-4   md:pt-2 lg:flex-row 3xl:pt-14">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -42,7 +42,7 @@ const Hero = ({
                 <div className=" flex md:max-lg:items-center md:max-lg:justify-center">
                   <button
                     onClick={() => setActiveFilter("All")}
-                    className="flex  w-full items-center justify-center self-start rounded-full border-2 border-main-color p-2 text-center font-medium duration-500 hover:bg-main-color hover:text-text-main  sm:px-5 sm:py-3 md:w-auto lg:py-4 lg:px-8"
+                    className="flex  w-full items-center justify-center self-start rounded-full border-2 border-main-color p-2 text-center font-medium duration-500 hover:bg-main-color hover:text-text-main  active:bg-main-color active:text-text-main sm:px-5 sm:py-3 md:w-auto lg:py-4 lg:px-8"
                   >
                     <span className="text-sm">{buttonText}</span>
 
@@ -52,7 +52,7 @@ const Hero = ({
                   </button>
                 </div>
               </Links>
-              <div className="mt-auto lg:mt-14 ">
+              <div className=" md:mt-9 lg:mt-14 ">
                 <div className="flex flex-col items-center justify-center xl:flex-row">
                   <div className="flex  w-48 justify-center -space-x-2 overflow-hidden">
                     <img
@@ -83,9 +83,9 @@ const Hero = ({
                 <Link to="categories" smooth={true} spy={true} duration={500}>
                   <div className="flex cursor-pointer justify-center self-center">
                     <span className="self-center">
-                      {/* <UseAnimations animation={arrowDown} size={56} /> */}
                       <Image
                         src="/images/arrowdown.gif"
+                        alt="arrowdown"
                         width={80}
                         height={80}
                       ></Image>

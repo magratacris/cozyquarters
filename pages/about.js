@@ -9,7 +9,7 @@ const About = () => {
       transition={{ duration: 0.7 }}
       className="mx-auto flex min-h-[40rem] max-w-[65rem] flex-col p-8"
     >
-      <h1 className="mx-auto py-4 text-2xl">About Us</h1>
+      <h1 className="mx-auto whitespace-nowrap py-4 text-2xl">About Us</h1>
       <p className="text-sm">
         Welcome to my fully functional e-commerce website! This website is a
         personal project created to showcase my web development skills and to

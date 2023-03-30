@@ -148,7 +148,7 @@ const Cart = () => {
               <button
                 type="button"
                 onClick={handleCheckout}
-                className="mt-5 w-full scale-100 transform  rounded-2xl border-none bg-main-color p-4  text-xs  text-text-main duration-500 hover:scale-105 md:mt-10 md:text-base
+                className="mt-5 w-full   rounded-2xl border-2  border-main-color  bg-main-color  p-4 text-xs  text-text-main duration-500 hover:bg-text-main hover:text-main-color active:bg-main-color active:text-text-main md:mt-10 md:text-base
                 "
               >
                 Pay with Stripe

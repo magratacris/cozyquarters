@@ -106,7 +106,7 @@ export const StateContext = ({ children }) => {
       setFilterData(products);
     } else {
       setActiveFilter(item);
-      const filteredWithNewId = products?.map((product) => {
+      const filteredWithNewId = products.map((product) => {
         return {
           ...product,
           _id: uuid(),

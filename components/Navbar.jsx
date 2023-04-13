@@ -3,6 +3,7 @@ import { useStateContext } from "@/context/StateContext";
 import Cart from "./Cart";
 import NavPanel from "./NavPanel";
 //next
+import Image from "next/image";
 import Link from "next/link";
 //hooks
 import useWindowSize from "@/hooks/useWindowSize";
@@ -42,10 +43,11 @@ const Navbar = () => {
           <ul className="relative flex  items-center justify-between gap-2  ">
             <Link href="/">
               <li className="ml-12 mr-8 lg:ml-0">
-                <img
+                <Image
                   src="/images/logo1.png"
                   alt=""
                   width={150}
+                  height={60}
                   className="cursor-pointer"
                 />
               </li>

@@ -2,6 +2,7 @@
 import { urlFor } from "@/lib/client";
 //next
 import Link from "next/link";
+import Image from "next/image";
 //react-icons
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 //framer-motion
@@ -22,8 +23,10 @@ const Products = ({
         } flex w-32 cursor-pointer flex-col rounded-xl shadow-2xl md:w-48   lg:w-[15.625rem] `}
       >
         <div className="overflow-hidden rounded-t-xl border-[1px] border-[#e4e3e3]   ">
-          <img
-            src={urlFor(image && image[0])}
+          <Image
+            src={urlFor(image && image[0]).url()}
+            width={420}
+            height={420}
             className="h-full w-full transform rounded-t-xl object-cover duration-500 hover:scale-110"
           />
         </div>

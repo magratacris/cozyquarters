@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useStateContext } from "../context/StateContext";
 //next
 import Link from "next/link";
+import Image from "next/image";
 //react-hot-toast
 import toast from "react-hot-toast";
 //sanity
@@ -91,8 +92,10 @@ const Cart = () => {
                 className="flex h-40 w-full gap-2  md:gap-8 md:p-6"
               >
                 <div className="h-14 w-14 md:h-28 md:w-28">
-                  <img
-                    src={urlFor(item?.image[0])}
+                  <Image
+                    src={urlFor(item?.image[0]).url()}
+                    width={421}
+                    height={421}
                     className="h-full w-full rounded-xl bg-[#f8f8f8] "
                   />
                 </div>

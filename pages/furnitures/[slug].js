@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useStateContext } from "@/context/StateContext";
+//next
+import Image from "next/image";
 //sanity
 import { client, urlFor } from "@/lib/client";
 //react-icons
@@ -39,16 +41,20 @@ const ProductDetails = ({ slugDetails, mayLike }) => {
             id="image-container "
             className="h-64 w-64 sm:h-[22rem] sm:w-[22rem]"
           >
-            <img
-              src={urlFor(image && image[index])}
+            <Image
+              src={urlFor(image && image[index]).url()}
+              width={420}
+              height={420}
               className=" rounded-xl bg-white hover:bg-[#f02d34]"
             />
           </div>
           <div id="small-images-container" className="mt-12 flex gap-3">
             {image?.map((item, i) => (
-              <img
+              <Image
                 key={i}
-                src={urlFor(item)}
+                src={urlFor(item).url()}
+                width={421}
+                height={421}
                 onMouseEnter={() => setIndex(i)}
                 className={
                   i === index ? "selected-image small-image" : "small-image"

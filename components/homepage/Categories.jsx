@@ -3,6 +3,7 @@ import { useStateContext } from "@/context/StateContext";
 import { urlFor } from "@/lib/client";
 //next
 import Link from "next/link";
+import Image from "next/image";
 //framer-motion
 import { motion } from "framer-motion";
 
@@ -15,7 +16,7 @@ const Categories = ({ categories, allProducts }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
-        className="mx-auto mt-16 max-w-[72rem] px-4 pt-9"
+        className="mx-auto mt-16 max-w-[72rem] px-4 pt-20"
       >
         <div>
           <h3 className="mb-12 text-center text-2xl md:text-4xl">
@@ -35,8 +36,10 @@ const Categories = ({ categories, allProducts }) => {
                     {item.name}
                   </h3>
                   <div className="absolute bottom-0 z-10 m-0 h-24 w-full  bg-gradient-to-t from-black "></div>
-                  <img
-                    src={urlFor(item.image && item.image)}
+                  <Image
+                    src={urlFor(item.image).url()}
+                    width={400}
+                    height={400}
                     className="h-full w-full transform rounded-t-xl object-cover duration-500 group-hover:scale-110"
                   />
                 </div>

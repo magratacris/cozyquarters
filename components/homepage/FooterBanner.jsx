@@ -1,5 +1,6 @@
 import { useStateContext } from "@/context/StateContext";
 //next
+import Image from "next/image";
 import Link from "next/link";
 const FooterBanner = () => {
   const { setActiveFilter } = useStateContext();
@@ -26,8 +27,11 @@ const FooterBanner = () => {
           </Link>
         </div>
         <div className="order-1 flex-1 overflow-hidden rounded-3xl lg:order-2 lg:w-1/2">
-          <img
+          <Image
             src="/images/h5.jpg"
+            width={1920}
+            height={1080}
+            alt=""
             className="h-full w-full rounded-3xl duration-500 hover:scale-105"
           />
         </div>

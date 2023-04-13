@@ -4,7 +4,6 @@ import { useStateContext } from "@/context/StateContext";
 import { client } from "@/lib/client";
 //components
 import Products from "@/components/homepage/Products";
-//framer-motion
 
 const AllProducts = ({ allProducts }) => {
   const { filterProcess, filterData, activeFilter } = useStateContext();

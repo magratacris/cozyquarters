@@ -15,8 +15,6 @@ import {
 import Products from "@/components/homepage/Products";
 //marquee
 import Marquee from "react-fast-marquee";
-//framer-motion
-import { motion } from "framer-motion";
 
 const ProductDetails = ({ slugDetails, mayLike }) => {
   const { image, name, details, price, summary } = slugDetails;
@@ -30,12 +28,7 @@ const ProductDetails = ({ slugDetails, mayLike }) => {
 
   return (
     <div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        className="m-10 mx-auto mt-16 flex max-w-[72rem] flex-col gap-5 px-4 text-black lg:flex-row xl:gap-10"
-      >
+      <div className="m-10 mx-auto mt-16 flex max-w-[72rem] flex-col gap-5 px-4 text-black lg:flex-row xl:gap-10">
         <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start">
           <div
             id="image-container "
@@ -125,7 +118,7 @@ const ProductDetails = ({ slugDetails, mayLike }) => {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
       <div id="mayLike-product-wrapper" className="mt-16">
         <h2 className="m-8 text-center ">You may also like</h2>
         <div className="">

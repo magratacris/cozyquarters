@@ -1,13 +1,6 @@
-//framer-motion
-import { motion } from "framer-motion";
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.7 }}
-      className="mx-auto mt-14 flex min-h-[40rem] max-w-[65rem] flex-col p-8"
-    >
+    <div className="mx-auto mt-14 flex min-h-[40rem] max-w-[65rem] flex-col p-8">
       <h1 className="mx-auto whitespace-nowrap py-4 text-2xl">About Us</h1>
       <p className="text-sm">
         Welcome to my fully functional e-commerce website! This website is a
@@ -39,7 +32,7 @@ const About = () => {
       <div className="mt-7 flex items-center justify-center">
         <img src="/images/logo1.png" alt="" width={250} />
       </div>
-    </motion.div>
+    </div>
   );
 };
 

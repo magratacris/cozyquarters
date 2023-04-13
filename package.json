@@ -25,6 +25,7 @@
     "react-icons": "^4.3.1",
     "react-scroll": "^1.8.9",
     "react-useanimations": "^2.10.0",
+    "sharp": "^0.32.0",
     "stripe": "^8.209.0",
     "swiper": "^9.1.0",
     "uuidv4": "^6.2.13"

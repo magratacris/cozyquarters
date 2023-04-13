@@ -9,17 +9,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-//framer-motion
-import { motion } from "framer-motion";
 
 const Featured = ({ featured }) => {
   return (
     <div className="mx-auto mt-16  min-h-[45rem] max-w-[72rem] rounded-3xl bg-main-color px-2 shadow-2xl sm:px-4">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
+      <div>
         <div className="flex flex-col justify-between text-[#F1F0E8] lg:flex-row">
           <div className="flex items-center justify-center py-4">
             <h3 className=" align-unset items-center text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl">
@@ -65,7 +59,7 @@ const Featured = ({ featured }) => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </motion.div>
+      </div>
     </div>
   );
 };

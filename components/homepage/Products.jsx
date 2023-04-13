@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 //react-icons
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-//framer-motion
-import { motion } from "framer-motion";
 
 const Products = ({
   product: { image, slug, name, details, price },
@@ -15,10 +13,7 @@ const Products = ({
 }) => {
   return (
     <Link href={`/furnitures/${slug.current}`}>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+      <div
         className={` ${margin}
         } flex w-32 cursor-pointer flex-col rounded-xl shadow-2xl md:w-48   lg:w-[15.625rem] `}
       >
@@ -53,7 +48,7 @@ const Products = ({
           )}
           <p className="text-[0.6rem] text-gray-300">3 versions available</p>
         </div>
-      </motion.div>
+      </div>
     </Link>
   );
 };

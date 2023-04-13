@@ -4,20 +4,13 @@ import { urlFor } from "@/lib/client";
 //next
 import Link from "next/link";
 import Image from "next/image";
-//framer-motion
-import { motion } from "framer-motion";
 
 const Categories = ({ categories, allProducts }) => {
   const { filterProcess } = useStateContext();
 
   return (
     <div name="categories">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        className="mx-auto mt-16 max-w-[72rem] px-4 pt-20"
-      >
+      <div className="mx-auto mt-16 max-w-[72rem] px-4 pt-20">
         <div>
           <h3 className="mb-12 text-center text-2xl md:text-4xl">
             Top Categories
@@ -47,7 +40,7 @@ const Categories = ({ categories, allProducts }) => {
             ))}
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

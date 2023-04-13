@@ -6,8 +6,6 @@ import Link from "next/link";
 import { BsBagCheckFill } from "react-icons/bs";
 //lib
 import { runFireworks } from "../lib/utils";
-//framer-motion
-import { motion } from "framer-motion";
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
@@ -21,9 +19,7 @@ const Success = () => {
 
   return (
     <div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+      <div
         transition={{ duration: 0.7 }}
         className="mx-auto mt-40 flex max-w-[62.5rem] flex-col  items-center justify-center rounded-2xl bg-main-color px-4 py-5 text-text-main md:px-12"
       >
@@ -52,7 +48,7 @@ const Success = () => {
             Continue Shopping
           </button>
         </Link>
-      </motion.div>
+      </div>
     </div>
   );
 };

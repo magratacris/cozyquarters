@@ -3,7 +3,8 @@ import React, { useRef } from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 //react-hot-toast
 import { toast } from "react-hot-toast";
-
+//next
+import Image from "next/image";
 const Footer = () => {
   const newsLetter = useRef();
   const newsletterHandler = () => {
@@ -47,9 +48,11 @@ const Footer = () => {
       <div className="m-6 mx-auto mt-12 flex w-4/5 flex-col flex-wrap  items-center gap-6 text-center md:flex-row md:items-start md:justify-between md:text-start">
         <div>
           <div className="flex w-44 flex-col gap-4">
-            <img
+            <Image
               src="/images/logo1.png"
               alt=""
+              width={150}
+              height={60}
               className="w-full
             "
             />

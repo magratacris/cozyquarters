@@ -5,7 +5,6 @@ import { urlFor } from "@/lib/client";
 // next
 import Links from "next/link";
 import Image from "next/image";
-
 //react-scroll
 import { Link } from "react-scroll";
 //react-icons
@@ -15,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper";
 //framer-motion
 import { motion } from "framer-motion";
-
+import { client } from "@/lib/client";
 const Hero = ({
   banner: { image, buttonText, mainText, smallText, smallText2 },
 }) => {
@@ -38,7 +37,6 @@ const Hero = ({
               <h3 className="text-center text-xs sm:text-sm md:text-start md:indent-6 ">
                 {smallText}
               </h3>
-
               <Links href="/furnitures">
                 <div className=" flex md:max-lg:items-center md:max-lg:justify-center">
                   <button
@@ -111,8 +109,11 @@ const Hero = ({
             >
               {image.map((item, i) => (
                 <SwiperSlide key={i}>
-                  <img
-                    src={urlFor(item)}
+                  <Image
+                    src={urlFor(item).url()}
+                    alt=""
+                    width={1920}
+                    height={1400}
                     className="h-full w-full rounded-3xl object-cover duration-500 hover:scale-105"
                   />
                 </SwiperSlide>
